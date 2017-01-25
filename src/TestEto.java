@@ -57,7 +57,7 @@ public class TestEto {
 	}
 	@Test
 	public void testEto14() {
-		assertEquals(Eto.getEto(5012),"辰");
+		assertEquals(Eto.getEto(2147483647),"卯");
 	}
 	@Test(expected= IllegalArgumentException.class)
 	public void testEto15() {
