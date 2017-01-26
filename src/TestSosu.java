@@ -11,19 +11,19 @@ public class TestSosu {
 	@Test
 	public void testGetPrimeNumberList1() {
 		List<Integer> lst = Sosu.getPrimeNumberList(1, 5);
-		assertThat(2, is(lst.get(0)));
-		assertThat(3, is(lst.get(1)));
-		assertThat(5, is(lst.get(2)));
-		assertThat(3, is(lst.size()));
+		assertThat(lst.get(0),is(2));
+		assertThat(lst.get(1), is(3));
+		assertThat(lst.get(2), is(5));
+		assertThat(lst.size(), is(3));
 	}
 	@Test
 	public void testGetPrimeNumberList2() {
 		List<Integer> lst = Sosu.getPrimeNumberList(10, 20);
-		assertThat(11,is(lst.get(0)));
-		assertThat(13,is(lst.get(1)));
-		assertThat(17,is(lst.get(2)));
-		assertThat(19,is(lst.get(3)));
-		assertThat(4,is(lst.size()));
+		assertThat(lst.get(0),is(11));
+		assertThat(lst.get(1),is(13));
+		assertThat(lst.get(2),is(17));
+		assertThat(lst.get(3),is(19));
+		assertThat(lst.size(),is(4));
 	}
 	@Test(expected= IllegalArgumentException.class)
 	public void testGetPrimeNumberList3() {
