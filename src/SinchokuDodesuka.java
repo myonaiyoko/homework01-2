@@ -32,6 +32,7 @@ public class SinchokuDodesuka {
 	}
 
 	public static String getSinchokuDodesukaString() {
+
 		String returnValue = "";
 		Random rnd = new Random();
 		while(!returnValue.endsWith(FIRST_STRING + SECOND_STRING + THIRD_STRING + FOURTH_STRING)) {
@@ -43,6 +44,7 @@ public class SinchokuDodesuka {
 	}
 
 	public static String getSinchoduDodesukaStringBuffer() {
+
 		StringBuffer returnValue = new StringBuffer();
 		Random rnd = new Random();
 		while(!returnValue.toString().endsWith(FIRST_STRING + SECOND_STRING + THIRD_STRING + FOURTH_STRING)) {
