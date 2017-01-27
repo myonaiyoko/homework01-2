@@ -36,19 +36,19 @@ public class Main {
 		System.out.println("処理時間 : " + String.valueOf((end - start) / 1000000000f) + "秒");
 
 		// 4.進捗どうですか？出力
-		System.out.println("4.進捗どうですか？(StringBuilder)");
+		System.out.println("4-1.進捗どうですか？(StringBuilder)");
 		start = System.nanoTime();
 		System.out.println(SinchokuDodesuka.getSinchokuDodesuka());
 		end = System.nanoTime();
 		System.out.println("処理時間 : " + String.valueOf((end - start) / 1000000000f) + "秒");
 
-		System.out.println("4.進捗どうですか？(String)");
+		System.out.println("4-2.進捗どうですか？(String)");
 		start = System.nanoTime();
 		System.out.println(SinchokuDodesuka.getSinchokuDodesukaString());
 		end = System.nanoTime();
 		System.out.println("処理時間 : " + String.valueOf((end - start) / 1000000000f) + "秒");
 
-		System.out.println("4.進捗どうですか？(StringBufferr)");
+		System.out.println("4-3.進捗どうですか？(StringBufferr)");
 		start = System.nanoTime();
 		System.out.println(SinchokuDodesuka.getSinchoduDodesukaStringBuffer());
 		end = System.nanoTime();
