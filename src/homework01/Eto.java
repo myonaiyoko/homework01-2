@@ -1,10 +1,11 @@
+package homework01;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  */
-
 
 /**
  * @author Myonai
@@ -16,7 +17,7 @@ public class Eto {
 
 	public static String getEto(int year) {
 
-		if(year < 1) {
+		if (year < 1) {
 			throw new IllegalArgumentException("紀元前は計算できません。");
 		}
 
@@ -35,7 +36,6 @@ public class Eto {
 			etoList.add("午");
 			etoList.add("未");
 		}
-//		List<String> etoList = new ArrayList<String>();
 
 		return etoList.get(year % 12);
 	}

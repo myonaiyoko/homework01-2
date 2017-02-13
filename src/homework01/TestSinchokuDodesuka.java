@@ -1,3 +1,5 @@
+package homework01;
+
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
@@ -7,7 +9,7 @@ public class TestSinchokuDodesuka {
 
 	@Test
 	public void test() {
-		assertThat(SinchokuDodesuka.getSinchokuDodesuka().indexOf("進捗どうですか？") != -1,is(true));
+		assertThat(SinchokuDodesuka.getSinchokuDodesuka().indexOf("進捗どうですか？") != -1, is(true));
 	}
 
 }
